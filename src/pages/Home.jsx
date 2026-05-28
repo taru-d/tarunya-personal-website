@@ -8,7 +8,7 @@ export default function Home() {
         <div className={styles.photoWrap}>
           {/* Headshot image lives at /public/headshot.png */}
           <img
-            src="/headshot.png"
+            src={import.meta.env.BASE_URL + 'headshot.png'}
             alt="Tarunya Dharmarajan" /* TODO: update alt text if name changes */
             className={styles.photo}
           />

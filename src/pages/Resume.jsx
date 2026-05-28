@@ -7,7 +7,7 @@ export default function Resume() {
         <h1 className={styles.heading}>Résumé</h1>
         {/* TODO: update the PDF download link text / filename as needed */}
         <a
-          href="/resume.pdf"
+          href={import.meta.env.BASE_URL + 'resume.pdf'}
           download="Dharmarajan_Tarunya_Resume.pdf"
           className={styles.download}
         >
@@ -18,7 +18,7 @@ export default function Resume() {
       <div className={styles.viewerWrap}>
         {/* PDF lives at /public/resume.pdf */}
         <iframe
-          src="/resume.pdf"
+          src={import.meta.env.BASE_URL + 'resume.pdf'}
           title="Tarunya Dharmarajan — Résumé" /* TODO: update title if name changes */
           className={styles.viewer}
         />
