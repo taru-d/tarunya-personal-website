@@ -1,0 +1,117 @@
+.main {
+  padding-block: var(--space-xl);
+  max-width: 52rem;
+}
+
+/* ── Top ──────────────────────────────────────────────────── */
+.top {
+  margin-bottom: var(--space-xl);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: var(--space-sm);
+}
+
+.sub {
+  font-size: 1.0625rem;
+  color: var(--color-ink-muted);
+  max-width: 44ch;
+  line-height: 1.65;
+}
+
+/* ── Cards ────────────────────────────────────────────────── */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.card {
+  border: 1.5px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-surface);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.cardLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  color: var(--color-ink);
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  flex-shrink: 0;
+  color: var(--color-ink-muted);
+  transition: background 0.2s, color 0.2s;
+}
+
+.card:hover .cardIcon {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+.cardText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.cardLabel {
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  font-weight: 500;
+}
+
+.cardDisplay {
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+.cardArrow {
+  font-size: 1.25rem;
+  color: var(--color-ink-muted);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.card:hover .cardArrow {
+  color: var(--color-accent);
+  transform: translate(3px, -3px);
+}
+
+/* ── Mobile ───────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .cardLink {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .cardDisplay {
+    font-size: 0.9375rem;
+  }
+}

@@ -1,0 +1,86 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 250, 248, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.375rem;
+  letter-spacing: 0.04em;
+  color: var(--color-ink);
+  transition: color 0.2s;
+}
+
+.logo:hover {
+  color: var(--color-accent);
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-ink-muted);
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width 0.25s ease;
+}
+
+.link:hover {
+  color: var(--color-ink);
+}
+
+.link:hover::after,
+.active::after {
+  width: 100%;
+}
+
+.active {
+  color: var(--color-ink);
+}
+
+/* ── Mobile ───────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .links {
+    gap: var(--space-md);
+  }
+
+  .link {
+    font-size: 0.875rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+}

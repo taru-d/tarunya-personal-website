@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--nav-height));
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.download {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s;
+}
+
+.download:hover {
+  opacity: 0.7;
+}
+
+.viewerWrap {
+  flex: 1;
+  padding: var(--space-md) 0;
+}
+
+.viewer {
+  display: block;
+  width: 100%;
+  /* Tall enough to show at least the first page without outer-page scroll */
+  height: calc(100vh - var(--nav-height) - 8rem);
+  min-height: 600px;
+  border: none;
+  background: #fff;
+}
