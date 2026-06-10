@@ -26,8 +26,8 @@ export default function Projects() {
         <div className={styles.bannerCopy}>
           <span className={styles.bannerLabel}>Code</span>
           <p className={styles.bannerText}>
-            I build tools at the intersection of AI, policy, and access.{' '}
-            See everything I'm working on GitHub.
+            Here's a look at what I've been building.{' '}
+            Find all my projects on GitHub.
           </p>
         </div>
         <a
