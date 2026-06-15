@@ -7,7 +7,7 @@ const projects = [
     title: 'State Chatbot Bill Tracker',
     description: 'Interactive dashboard tracking U.S. state legislation on AI companion chatbot regulation, with maps, charts, and searchable bill cards',
     type: 'HTML · Data',
-    url: 'https://github.com/taru-d/chatbotbilltracker',
+    url: 'https://taru-d.github.io/chatbotbilltracker/',
   },
   {
     id: 2,
