@@ -4,13 +4,20 @@ import styles from './Projects.module.css'
 const projects = [
   {
     id: 1,
+    title: 'State Chatbot Bill Tracker',
+    description: 'Interactive dashboard tracking U.S. state legislation on AI companion chatbot regulation, with maps, charts, and searchable bill cards',
+    type: 'HTML · Data',
+    url: 'https://github.com/taru-d/chatbotbilltracker',
+  },
+  {
+    id: 2,
     title: 'Cover Letter Generator',
     description: 'AI-powered tool that generates personalized cover letters',
     type: 'Python · AI',
     url: 'https://github.com/taru-d',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Chief of Staff AI Agent — Walkthrough',
     description: 'A step-by-step walkthrough of building an AI chief of staff agent',
     type: 'Documentation',
