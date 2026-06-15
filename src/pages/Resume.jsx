@@ -17,7 +17,7 @@ const experiences = [
     org: 'Consumer Federation of America',
     role: 'Technology Policy Intern',
     location: 'Washington, D.C.',
-    dates: 'January 2026 – Present',
+    dates: 'January 2026 – May 2026',
     bullets: [
       'Developed a list of lobbying rules for all 50 states to support lobbying operations for a model chatbot safety bill.',
       'Researched and compiled a list of all chatbot-related legislation in the United States, analyzing policies for scope of protections.',
@@ -41,7 +41,7 @@ const experiences = [
     org: 'Atticus Project',
     role: 'Applied AI Research Intern – Legal and Regulatory Compliance',
     location: 'San Mateo, California',
-    dates: 'June 2024 – August 2025',
+    dates: 'June 2024 – Present',
     bullets: [
       'Analyzed 1000+ contracts from F500 companies to develop the ACORD dataset, an open-source contract negotiation dataset for lawyers.',
       'Built an AI compliance dataset, analyzing company contracts for compliance with GDPR, EU AI Act, & other regulatory frameworks.',
@@ -65,7 +65,7 @@ const experiences = [
     org: 'ConnectSafely',
     role: 'Youth Advisory Board Member',
     location: 'Palo Alto, California',
-    dates: 'January 2025 – Present',
+    dates: 'June 2024 – August 2025',
     bullets: [
       'Advise on tech legislation, shape national organizational strategies, and develop community resources for safe use of social media.',
       'Author blogs on internet safety, responsible digital practices, and policy implementation to enhance online protections.',
